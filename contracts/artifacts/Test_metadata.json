@@ -6,22 +6,34 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "firstArrString",
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Owner",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -53,10 +65,10 @@
 	},
 	"sources": {
 		"contracts/4_Test.sol": {
-			"keccak256": "0x7302eec7e2bbd7d88321375627249ff564f420bd3162eb075ec81aba5ce52dec",
+			"keccak256": "0xa5e0132590a803ec74e74540950ade3f88d852f0103d3a85d94b91bb838e4a0b",
 			"urls": [
-				"bzz-raw://ef12ec8f4f46b715ea733f4b74a2a3ce9659e993f5701fec881c94f487ac2969",
-				"dweb:/ipfs/QmRHvAUbjfSKvYzmEyBwoxP8SvWPfjeeBL3Kkhr6ruSy8Z"
+				"bzz-raw://82ec8286d6921f3a5b99663d2c5418c246a7505cc750ba86c04b20857585dbee",
+				"dweb:/ipfs/QmcNrfxiuAuWGTF8YsjGvvvWsKt7NAATZewgzKKSZCy1m9"
 			]
 		}
 	},

@@ -8,19 +8,39 @@ contract Test {
     // initializing an array of strings
     // string[] public firstArrString = ["hi", "hello"];
 
-    Person public person;
+    // Person public person;
 
-    struct Person{
-        string firstname;
-        string lastname;
-        uint256 age;
+    // struct Person{
+    //     string firstname;
+    //     string lastname;
+    //     uint256 age;
+    // }
+
+    // function doThings() public {
+    //     person = Person({
+    //         firstname: "Kenneth",
+    //         lastname: "Lartey",
+    //         age: 22
+    //     });
+    // }
+
+    // mapping introduction 
+    // address user = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+    // mapping(address => uint) public balances;
+
+    // function doThings() public {
+    //     balances[user] = 100;
+    // }
+     
+    address public Owner;
+
+    constructor() {
+        Owner = msg.sender;
     }
 
-    function doThings() public {
-        person = Person({
-            firstname: "Kenneth",
-            lastname: "Lartey",
-            age: 22
-        });
+    function changeOwner(address newOwner) public {
+        require(msg.sender == Owner, "Only owners are allowed to change other owners");
+        Owner = newOwner;
     }
 }
