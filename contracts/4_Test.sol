@@ -33,14 +33,22 @@ contract Test {
     //     balances[user] = 100;
     // }
      
-    address public Owner;
+    // address public Owner;
 
-    constructor() {
-        Owner = msg.sender;
+    // constructor() {
+    //     Owner = msg.sender;
+    // }
+
+    // function changeOwner(address newOwner) public {
+    //     require(msg.sender == Owner, "Only owners are allowed to change other owners");
+    //     Owner = newOwner;
+    // }
+
+    constructor() payable {
+
     }
 
-    function changeOwner(address newOwner) public {
-        require(msg.sender == Owner, "Only owners are allowed to change other owners");
-        Owner = newOwner;
+    function checkBalance() public view returns(uint256) {
+        return(address(this).balance);
     }
 }

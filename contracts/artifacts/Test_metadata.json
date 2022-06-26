@@ -7,33 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "Owner",
+				"name": "checkBalance",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "uint256",
 						"name": "",
-						"type": "address"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "changeOwner",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -65,10 +52,10 @@
 	},
 	"sources": {
 		"contracts/4_Test.sol": {
-			"keccak256": "0xa5e0132590a803ec74e74540950ade3f88d852f0103d3a85d94b91bb838e4a0b",
+			"keccak256": "0x38959c232248ccb6bebf121b41f886f3f5661a91cf3c1b9433b09ec51b57ced4",
 			"urls": [
-				"bzz-raw://82ec8286d6921f3a5b99663d2c5418c246a7505cc750ba86c04b20857585dbee",
-				"dweb:/ipfs/QmcNrfxiuAuWGTF8YsjGvvvWsKt7NAATZewgzKKSZCy1m9"
+				"bzz-raw://d9df6aa7f3afbdd581d1ebc862fa5e3c2df5782dc18535bf0432de575a16eb01",
+				"dweb:/ipfs/QmcNJnfPcBWjFRR8gtEqNWfkXx6L6BfQQvF1TPstZRXBLM"
 			]
 		}
 	},
