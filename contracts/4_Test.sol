@@ -44,11 +44,13 @@ contract Test {
     //     Owner = newOwner;
     // }
 
-    constructor() payable {
+    // constructor() payable {
 
-    }
+    // }
 
-    function checkBalance() public view returns(uint256) {
-        return(address(this).balance);
-    }
+    // function checkBalance() public view returns(uint256) {
+    //     return(address(this).balance);
+    // }
+
+    // events and modifiers
 }
