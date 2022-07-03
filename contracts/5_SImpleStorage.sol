@@ -3,7 +3,7 @@ pragma solidity 0.8.8;
 
 contract SimpleStorage {
     
-    uint256 public favoriteNumber;
+    uint256 favoriteNumber;
 
     struct People{
         uint256 favoriteNumber;
@@ -12,8 +12,9 @@ contract SimpleStorage {
 
     People[] public people;
 
-    function insertIntoArr(uint256 number, string memory user) public {
-        people.push(People({favoriteNumber: number, name: user}));
+    function insertIntoArr(uint256 _favoriteNumber, string memory _name) public {
+        People memory newPerson = People({favoriteNumber: _favoriteNumber, name: _name});
+        people.push(newPerson);
     }
 
 
@@ -31,7 +32,7 @@ contract SimpleStorage {
 
     // pure functions 
     // disallows reading from the block chain 
-    function add() public pure returns(uint256){
-        return (1+1);
-    }
+    // function add() public pure returns(uint256){
+    //     return (1+1);
+    // }
 }
