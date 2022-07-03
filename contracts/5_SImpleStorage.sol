@@ -4,6 +4,19 @@ pragma solidity 0.8.8;
 contract SimpleStorage {
     
     uint256 public favoriteNumber;
+    People public person = People({favoriteNumber: 2, name: "Kenneth"});
+
+    struct People{
+        uint256 favoriteNumber;
+        string name;
+    }
+
+    People[] public people;
+
+    // function getPerson(uint256 favNumber, string name) public returns(People){
+    //     person = People({favoriteNumber: favNumber, name: name});
+    //     return person;
+    // }
 
     // function 
     function store(uint256 numberToStore) public{
