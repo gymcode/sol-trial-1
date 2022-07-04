@@ -53,4 +53,18 @@ contract Test {
     // }
 
     // events and modifiers
+
+    // calldata = exist temporarily that can't be modified
+    // memory = exist temporarily that can be modified
+    // storage = permanent variable that can be modified
+
+    // view doesn't have to spend gas to run 
+    // view functions disallows any for modifications of state
+    // you can't update the block chain at all using the view function
+
+    // pure functions 
+    // disallows reading from the block chain 
+    // function add() public pure returns(uint256){
+    //     return (1+1);
+    // }
 }
